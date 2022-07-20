@@ -226,7 +226,9 @@ nav a{
  .column:hover{
   box-shadow: 0 0 20px 0px rgba(26, 2, 67, 0.2) ;
  }
-
+ .column p{
+  color : black !important;
+ }
  @media(max-width: 700px){
   .row{
     flex-direction: column;
