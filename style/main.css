@@ -76,21 +76,19 @@ nav a:hover,:focus{
 color: #C0DEFF;
 }
 
-.nav-logo{
-  font-size: 3rem;
-  font-weight: 500;
-  cursor: pointer;
+.nav-logo img{
+  width: 101.4px;
+  height: 120px;
 }
 nav a{
   font-size: 1.2rem;
 }
 .grid{
-
   display: grid;
   grid-template-columns: repeat(2,1fr);
   justify-content: center;
   align-items: center;
-  column-gap: 8%;
+  /* column-gap: 8%; */
   row-gap: 40%;
 }
 .search{
@@ -108,7 +106,21 @@ nav a{
 }
 
 /* new css */
-
+.admission{
+  grid-area: 'admission';
+  background-color: #C0DEFF;
+  padding:0.87em;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.9rem ;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+.admission:hover{
+  background-color: rgb(22, 95, 185) ;
+  color: white;
+}
 .submenu1 {
   display: none;
   position: absolute;
@@ -130,6 +142,7 @@ nav a{
 }
 .convocation{
   color: black;
+  grid-area: 'convocation';
 }
 .convocation:hover{
     background-color: rgb(22, 95, 185) ;
@@ -293,7 +306,7 @@ nav a{
 /* animated search */
 
 .container {
-
+  grid-area: 'search';
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -405,7 +418,16 @@ nav a{
   color: rgb(3, 66, 121);
 }
 /* testimonial carousel */
-
+.map{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.map iframe{
+  width: 80%;
+  margin: 0 auto;
+}
 .carousel{
   margin: 10%;
   width: 80%;
@@ -650,6 +672,7 @@ max-height: 90vh;
 }
 .info p{
   font-size: 1.1rem;
+  color: white !important;
 }
 .info2{
   display: flex;
@@ -677,7 +700,7 @@ max-height: 90vh;
 .footer1 a{
   color: #a1a1a1;
 }
-.footer1 h3,p, .footer1 a:hover{
+.footer1 h3, .footer1 a:hover{
   color: white;
 }
 
