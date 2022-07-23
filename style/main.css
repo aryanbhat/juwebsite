@@ -75,7 +75,9 @@ nav a,li{
 nav a:hover,:focus{
 color: #C0DEFF;
 }
-
+.logo-sticky{
+ width: 10px;
+}
 .nav-logo img{
   width: 101.4px;
   height: 120px;
@@ -89,7 +91,7 @@ nav a{
   justify-content: center;
   align-items: center;
   /* column-gap: 8%; */
-  row-gap: 40%;
+  row-gap: 26%;
 }
 .search{
   color: white;
@@ -184,7 +186,7 @@ nav a{
 }
 
 .appear{
-  transform: translateY(24%) !important;
+  transform: translateY(34%) !important;
 }
 .toggle .line1{
   transform: rotate(-45deg) translate(-5px,6px);
@@ -320,8 +322,8 @@ nav a{
 .searchInput {
   width: 12rem;
   height: 2rem;
-  padding: 0 1rem; 
-  border-radius: 2rem;
+  padding: 1.75em; 
+  border-radius: 2px;
   border: none;
   transition: transform 0.1s ease-in-out;
 }
@@ -537,8 +539,11 @@ max-height: 90vh;
   }
   .grid{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center1;
+  }
+  .grid div{
+    margin-left: 3%;
   }
   .convocation{
     display: none;
@@ -566,6 +571,17 @@ max-height: 90vh;
     .burger{
       display:block;
       cursor: pointer;
+    }
+    .searchInput{
+      width: 12rem;
+      height: 2rem;
+      padding: 1.75em;
+      border-radius: 2px;
+      border: none;
+      transition: transform 0.1s ease-in-out;
+    }
+    .admission{
+      margin-left: 3%;
     }
 }
 @media screen and (max-width:800px){
