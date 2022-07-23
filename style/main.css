@@ -425,12 +425,15 @@ nav a{
   align-items: center;
 }
 .map iframe{
+  border-radius: 5%;
   width: 80%;
   margin: 0 auto;
 }
 .carousel{
   margin: 10%;
   width: 80%;
+  display: flex;
+  flex-direction: column;
   margin: 5% auto;
   position: relative;
   text-align: center;
@@ -490,7 +493,9 @@ width: 50%;
 max-height: 90vh;
   object-fit: cover;
 }
-
+.carousel h1{
+  margin-bottom: 10%;
+}
  /* footer */
  .footer-row{
   display: flex;
@@ -519,7 +524,11 @@ max-height: 90vh;
   padding-bottom: 42px;
 }
 
-
+.hgrid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-bottom: 3%;
+}
 
 /* media query */
 @media(min-width:800px) and (max-width:1400px) {
