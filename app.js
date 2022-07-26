@@ -32,7 +32,7 @@ const navSlide = () =>{
     var nav = document.querySelector(".nav-menu");
     var navbar = document.querySelector("nav");
     var grid = document.querySelector(".grid");
-    var logo = document.querySelector(".nav-logo-img");
+    var logo = document.querySelector(".nav-logo");
     navbar.classList.toggle("nav-sticky", window.scrollY > 1);
     grid.classList.toggle("grid-sticky", window.scrollY > 1);
     logo.classList.toggle("logo-sticky", window.scrollY > 1);

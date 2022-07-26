@@ -76,7 +76,7 @@ nav a:hover,:focus{
 color: #C0DEFF;
 }
 .logo-sticky{
- width: 10px;
+ transform: scale(0.6);
 }
 .nav-logo img{
   width: 101.4px;
@@ -102,6 +102,7 @@ nav a{
   font-size: 2rem;
   font-weight: 500;
   cursor: pointer;
+  transition: all 0.4s ease-out;
 }
 .nav-logo a{
   font-size: 2rem;
@@ -184,9 +185,11 @@ nav a{
 .burger{
   display: none;
 }
-
 .appear{
   transform: translateY(34%) !important;
+}
+.appear-sticky{
+  background-color: red;
 }
 .toggle .line1{
   transform: rotate(-45deg) translate(-5px,6px);
@@ -348,7 +351,7 @@ nav a{
 .searchInputIcon {
   position: absolute;
   right: 0.8rem;
-  top: 0.5rem;
+  top: 0.99rem;
   color: #a1a1a1;
   transition: all 0.1s ease-in-out;
 }
@@ -364,6 +367,7 @@ nav a{
   position: sticky;
   top: 0;
   min-height: 12vh;
+  max-height: 12vh;
   z-index: 1;
 }
 .grid-sticky{
@@ -513,7 +517,7 @@ max-height: 90vh;
   flex-wrap: wrap;
   margin: 0 auto;
   font-family: "Stoke", serif;
-  background-color: rgb(0, 42, 92);
+  background-color: rgb(2, 26, 84);
 }
 
 .footer-heading{
