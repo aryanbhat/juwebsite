@@ -19,7 +19,13 @@ const navSlide = () =>{
     const nav = document.querySelector(".nav-menu");
     const navlinks = document.querySelector("nav-links");
     burger.addEventListener('click',()=>{
+      let number = Number(this.scrollY);
+      if(number === 0){
       nav.classList.toggle("appear");
+      }
+      else{
+        nav.classList.toggle("appear-sticky");
+      }
       burger.classList.toggle("toggle");
     })
   }
@@ -36,9 +42,6 @@ const navSlide = () =>{
     navbar.classList.toggle("nav-sticky", window.scrollY > 1);
     grid.classList.toggle("grid-sticky", window.scrollY > 1);
     logo.classList.toggle("logo-sticky", window.scrollY > 1);
-    burger.addEventListener('click',()=>{
-      nav.classList.toggle("appear-sticky",window.scrollY > 1);
-    })
   })
 
   // carousel
