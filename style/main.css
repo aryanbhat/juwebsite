@@ -210,13 +210,14 @@ nav a{
 }
 
 .news{
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
  h1{
   font-size: 40px;
   color: rgb(3, 66, 121);
   padding: 30px;
+  text-align: left;
  }
  p{
   color: rgb(2, 26, 84);
@@ -230,14 +231,14 @@ nav a{
   margin-top: 0%;
   display: flex;
   justify-content: space-between;
+  column-gap: 40px;
  }
 
  .column{
   flex-basis: 31%;
   background: #F0EDEE;
-  border-radius: 10px;
   margin-bottom: 5%;
-  padding: 20px 12px;
+  padding: 20px 20px;
   box-sizing: border-box;
  }
 
@@ -259,6 +260,12 @@ nav a{
   margin: auto;
   text-align: center;
 
+ }
+ .department h1{
+  font-size: 40px;
+  color: rgb(3, 66, 121);
+  padding: 30px;
+  text-align: center;
  }
  .logo{
   flex-basis: 32%;
@@ -375,13 +382,12 @@ nav a{
 
 /* vc section */
 .vc{
-  background-color: #F0EDEE;
+  background-color: #d1cdce5c;
   margin-bottom: 3%;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   padding:3%;
-  border-radius: 2%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 3%;
@@ -433,7 +439,6 @@ nav a{
   align-items: center;
 }
 .map iframe{
-  border-radius: 5%;
   width: 80%;
   margin: 0 auto;
 }
@@ -534,14 +539,13 @@ max-height: 90vh;
 }
 
 .hgrid{
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
-  border-radius: 2%;
   margin-top: 3%;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   margin-bottom: 3%;
-  background-color: #F0EDEE;
+  background-color: #d1cdce36;
 }
 
 /* media query */
