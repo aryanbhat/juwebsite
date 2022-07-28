@@ -702,61 +702,50 @@ max-height: 90vh;
   position: relative;
   bottom: 0;
   width: 100%;
-  background-color: rgb(0, 42, 92);
+  background-color: rgb(2, 26, 84);
   font-size: 1.1rem;
+  height: 90vh;
 }
 .footer-container{
   max-width: 100%;
   margin: 0 auto;
-  background-color: rgb(0, 42, 92);
+  background-color: rgb(2, 26, 84);
   display: flex;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
 }
 .footer1{
-  width: 35%;
-  padding-left: 3%;
-  background-color:rgb(0, 42, 92);
+  width: 42vw;
+  background-color: rgb(2, 26, 84);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
-.footer1 div{
-  margin-top: 5%;
-}
+
 .info{
   font-size: 1.3rem;
 }
-.info p{
+/* .info p{
   font-size: 1.1rem;
   color: white !important;
-}
-.info2{
-  display: flex;
-  justify-content: flex-start;
-}
-.info2 a{
-  margin: 0 2%;
-}
-.info3{
-  display: flex;
-  justify-content: flex-start;
-}
-.info3 a{
-  margin: 0 3%;
-}
-.info4{
-  display: flex;
-  justify-content: flex-start;
-}
-.info4 a{
-  margin: 0 2%;
-  font-size:1.1rem;
-  transition: all 0.5s ease;
-}
+} */
+
 .footer1 a{
   color: #a1a1a1;
 }
-.footer1 h3, .footer1 a:hover{
+.footer1 h4{
   color: white;
+  /* border-bottom: 1px solid white; */
+  display: inline-block;
+  cursor: pointer;
+  
+}
+.footer1 h2{
+  color: white;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  cursor: pointer;
+  
 }
 
 .info4 a:hover{
@@ -764,49 +753,146 @@ max-height: 90vh;
 }
 /* footer1 end */
 .footer-links{
-  width: 60%;
+  width: 67vw;
   display: flex;
   justify-content: space-between;
-  margin-left: 15%;
+  padding-left: 66px;
+  margin-left: 0px;
+}
+.footer-links2{
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
 }
 .footer2{
-  background-color: rgb(0, 42, 92);
+  background-color: rgb(2, 26, 84);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100%;
+  width: 71%;
+  /* padding-left: 80px; */
 }
 .footer2 h3{
   margin-top: 8px;
 display: inline-block;
+border-bottom: 1px solid white;
 }
 .footer2 a{
   color: #a1a1a1;
-  padding-top: 8px;
+  padding-top: 12px;
 }
 .footer2 h3, .footer2 a:hover{
   color: white;
 }
 .footer3{
-  background: rgb(0, 42, 92);
+  background: rgb(2, 26, 84);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 100%;
+    width: 50%;
+    /* padding-left: 80px; */
 }
 .footer3 h3{
   margin-top: 8px;
   display: inline-block;
+  border-bottom: 1px solid white;
 }
 .footer3 a{
   color: #a1a1a1;
-  padding-top: 8px;
+  padding-top: 12px;
 }
 .footer3 h3, a:hover{
   color: white;
 }
+
+.footer4{
+  background: rgb(2, 26, 84);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+  
+}
+.footer6{
+  background: rgb(2, 26, 84);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+ 
+}
+.footer4 h3{
+  color: white;
+  margin-top: 8px;
+  display: inline-block;
+  border-bottom: 1px solid white;
+}
+.footer6 h3{
+  color: white;
+  margin-top: 8px;
+  display: inline-block;
+  border-bottom: 1px solid white;
+  
+}
+.footer4 a{
+  color: #a1a1a1;
+  padding-top: 12px;
+}
+.footer4 a:hover{
+  color: white;
+}
+.footer6 a{
+  color: #a1a1a1;
+  padding-top: 12px;
+  
+}
+.footer6 a:hover{
+  color: white;
+}
+
+.footer-bottom{
+  max-width: 100%;
+  margin: 0 0;
+  background-color: rgb(2, 26, 84);
+  display: flex;
+  margin-bottom: 7vh;
+}
+
+.footer5{
+  background: rgb(2, 26, 84);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+.footer5 a:hover{
+  color: white;
+}
+
+.info4{
+  display: flex;
+  justify-content: flex-start;
+  
+}
+.info4 h3{
+  color: white;
+  font-size:1.1rem;
+  width: 16vw;
+}
+.info4 a{
+  margin: 0 2%;
+  transition: all 0.5s ease;
+  color: #a1a1a1;
+  padding: 5px 5px;
+  font-size: 1.5rem;
+}
+
+
 /* Footer3 Ends Here */
 .footer-socials{
   cursor: default;
