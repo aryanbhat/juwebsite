@@ -549,7 +549,7 @@ max-height: 90vh;
 }
 
 /* media query */
-@media(min-width:800px) and (max-width:1200px) {
+@media(min-width:800px) and (max-width:1000px) {
   body{
     overflow-x: hidden;
   }
