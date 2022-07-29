@@ -232,7 +232,7 @@ nav a{
   font-size: 40px;
   color: rgb(3, 66, 121);
   padding: 30px;
-  text-align: left;
+  text-align: center;
  }
  p{
   color: rgb(2, 26, 84);
@@ -942,13 +942,14 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 .info4 h3{
   color: white;
   font-size:1.1rem;
-  width: 16vw;
+  width: 18vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .info4 a{
   margin: 0 2%;
   transition: all 0.5s ease;
   color: #a1a1a1;
-  padding: 5px 5px;
+  padding: 0px 3px;
   font-size: 1.5rem;
 }
 
