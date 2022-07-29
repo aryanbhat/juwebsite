@@ -143,6 +143,21 @@ nav a{
   border-bottom: 1px solid rgb(3, 3, 3);
   font-family: 'Poppins',sans-serif;
 }
+.Alumni {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 12px 0;
+  outline: 0;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  cursor: pointer;
+}
+.Alumni:hover {
+  background-color: rgb(22, 95, 185);
+  color: #fff;
+}
 .convocation{
   color: black;
   grid-area: 'convocation';
