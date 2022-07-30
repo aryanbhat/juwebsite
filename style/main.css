@@ -814,34 +814,20 @@ max-height: 90vh;
       display: flex;
       flex-direction: column;
     }
-    .footer-links{
-      display: flex;
-      flex-direction: column;
-    }
-    .footer1{
-      text-align: center;
-      width: 100%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    
+    
     .footer1 div{
       min-width: 100%;
     }
-    .info4 a{
-    padding: 2%;
-    }
-    .footer-links{
-      margin-top: 5%;
-    }
-    .footer-links div{
+    
+    
+    /* .footer-links div{
       margin: 0px auto 30px 9%;
       display: flex;
       flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } */
     .footer2{
       margin-top: 5%;
     }
@@ -860,6 +846,83 @@ max-height: 90vh;
     }
 }
 
+@media screen and (max-width:800px){
+  
+  .footer5{
+    text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .footer5 h3{
+    margin-right: 30px;
+  }
+  .footer-links2{
+   width: 100%;
+      display: flex;
+      flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 15px auto;
+  }
+  .footer6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .footer6 a,h3{
+    width: 100%;
+  }
+  .footer4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .footer4 a,h3{
+    width: 100%;
+  }
+  
+  .footer1{
+    text-align: center;
+    width: 100%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 15px auto;
+  }
+  .footer2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .footer2 a,h3{
+    width: 100%;
+  }
+  .footer3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .footer3 a,h3{
+    width: 100%;
+  }
+}
+
  /* footer */
  footer{
   padding: 5%;
@@ -868,7 +931,7 @@ max-height: 90vh;
   width: 100%;
   background-color: rgb(2, 26, 84);
   font-size: 1.1rem;
-  height: 90vh;
+  height: 100%;
 }
 .footer-container{
   max-width: 100%;
