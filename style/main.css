@@ -239,8 +239,9 @@ nav a{
  h1{
   font-size: 40px;
   color: rgb(3, 66, 121);
-  padding: 30px;
-  text-align: center;
+  padding: 0px;
+  text-align: left;
+  margin-top: 40px;
  }
  p{
   color: rgb(2, 26, 84);
@@ -392,8 +393,7 @@ nav a{
 .searchInput {
   width: 12rem;
   height: 2rem;
-  padding: 1.75em; 
-  border-radius: 2px;
+  padding: 1.75em;
   border: none;
   transition: transform 0.1s ease-in-out;
 }
