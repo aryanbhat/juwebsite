@@ -472,7 +472,15 @@ nav a{
   line-height: 22px;
   padding: 10px;
 }
+.vc-info{
+  display: flex;
+  flex-direction: row;
+}
+.vc-info img{
+  transform: translateY(-40%);
+}
 .vc-info p{
+  transform: translateY(40%);
   font-size: 1.1rem;
   color: rgb(2, 26, 84);
   font-weight: 300;
@@ -505,7 +513,7 @@ nav a{
   margin: 0 auto;
 }
 .carousel {
-  z-index: 0;
+  z-index: -10;
   max-width: 100%;
   height: 80vh;
   position: relative;
