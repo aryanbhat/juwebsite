@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
-
+::-webkit-scrollbar{
+  width: 20px;
+  background-color: #d1cdce5c;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #C0DEFF;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -50,7 +56,7 @@ button:hover {
 
 nav{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: rgb(0,42,92);
   min-height: 20vh;
@@ -92,6 +98,7 @@ nav a{
   align-items: center;
   /* column-gap: 8%; */
   row-gap: 26%;
+  margin-right: 1.5%;
 }
 .search{
   color: white;
@@ -130,7 +137,7 @@ nav a{
   background-color: #d4e6fa;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px #fdffff;
-  z-index: 1;
+  z-index: 50;
 }
 
 .submenu1 a {
@@ -159,6 +166,7 @@ nav a{
   color: #fff;
 }
 .convocation{
+  background: #C0DEFF;
   color: black;
   grid-area: 'convocation';
 }
@@ -427,7 +435,7 @@ nav a{
   top: 0;
   min-height: 12vh;
   max-height: 12vh;
-  z-index: 1;
+  z-index: 50;
 }
 .grid-sticky{
   display: none;
@@ -496,7 +504,101 @@ nav a{
   width: 80%;
   margin: 0 auto;
 }
-.carousel{
+.carousel {
+  z-index: 0;
+  max-width: 100%;
+  height: 80vh;
+  position: relative;
+  margin: 0 auto;
+}
+.img-hero-caption{
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+  background-color: #fdffff;
+  padding: 1%;
+}
+.img-hero-caption p{
+  width: 100%;
+  font-size: 1.5rem;
+  color: rgb(2, 26, 84);
+  font-weight: 500;
+  padding: 2%;
+}
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+  display: none; /* hide all slide images not currently being viewed */
+}
+
+.carousel .carousel-item-visible {
+  position: relative;
+  display: block; /* show current slide image */
+  animation: fadeVisibility 0.5s; /* for fading effect when switching between slides */
+}
+
+.carousel .carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 80vh;
+  height: auto;
+}
+
+/* Navigation control styles */
+.carousel .carousel-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* put space between the navigation buttons */
+  position: absolute; /* position navigation buttons on top */
+  top: 50%; /* center navigation buttons on the slide */
+  transform: translateY(-50%); /* align navigation buttons */
+}
+
+.carousel .carousel-actions button {
+  color: white;
+  border-radius: 50px;
+  background: none;
+  border: 0;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+/* .carousel .carousel-actions button :hover{
+  color: black;
+} */
+.carousel .carousel-actions button#carousel-button-prev {
+  background-color: transparent;
+  margin-left: 20px; /* prevent previous button from touching the side*/
+}
+
+.carousel .carousel-actions button#carousel-button-next {
+  margin-right: 20px;  /* prevent next button from touching the side*/
+}
+
+.carousel-dots {
+  display: none;
+  text-align: center; 
+}
+
+.dot {
+  opacity: 0.7; /* gray out dots for slides not being visted */
+}
+
+.dot:focus {
+  border: 1px solid black; /* dot for currently visited slide */
+}
+
+/* hanlde smooth transitions between slides */
+@keyframes fadeVisibility {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+.hcarousel{
   margin: 10%;
   width: 80%;
   display: flex;
@@ -506,15 +608,15 @@ nav a{
   text-align: center;
 }
 
-.carousel-item{
+.hcarousel-item{
   height: 50vh;
   display: none;
 }
-.carousel-item-selected{
+.hcarousel-item-selected{
   display: block;
 }
 
-.carousel-nav{
+.hcarousel-nav{
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -522,7 +624,7 @@ nav a{
   padding: 10px 0;
   text-align: center;
 }
-.carousel-btn{
+.hcarousel-btn{
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -534,13 +636,13 @@ nav a{
   margin: 0 5px;
   transition: all 0.3s ease-in;
 }
-.carousel-btn:hover{
+.hcarousel-btn:hover{
   background: #C0DEFF;
 }
-.carousel-btn-selected{
+.hcarousel-btn-selected{
   background: rgb(2, 26, 84); 
 }
-.carousel-item-card{
+.hcarousel-item-card{
   width: 80%;
   max-height: 30vh;
   margin: 0 auto;
@@ -550,17 +652,17 @@ nav a{
   align-items: center;
 text-align: center;
 }
-.carousel-item-card-info p{
+.hcarousel-item-card-info p{
   font-size: 1.2rem;
   font-weight: 500;
 }
-.carousel-item-card-pic img{
+.hcarousel-item-card-pic img{
   border-radius: 50%;
 width: 50%;
 max-height: 90vh;
   object-fit: cover;
 }
-.carousel h1{
+.hcarousel h1{
   margin-bottom: 10%;
 }
  /* footer */
