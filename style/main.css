@@ -710,6 +710,20 @@ max-height: 90vh;
       height: 50vh;
     }
 }
+@media screen and (max-width:800px)  {
+  .footer5{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+ .info4 h3{ 
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 25px;
+}
+}
 
  /* footer */
  footer{
