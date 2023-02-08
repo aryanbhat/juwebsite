@@ -676,7 +676,8 @@ max-height: 90vh;
   object-fit: cover;
 }
 .hcarousel h1{
-  margin-bottom: 10%;
+  margin-bottom: 20%;
+  text-align: center;
 }
  /* footer */
  .footer-row{
